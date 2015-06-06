@@ -54,7 +54,6 @@ public abstract class RECOActivity extends Activity implements RECOServiceConnec
          * 		mRecoManager = RECOBeaconManager.getInstance(getApplicationContext(), true, false);
          * 주의: enableRangingTimeout을 false로 설정 시, 배터리 소모량이 증가합니다.
          */
-
         mRecoManager = RECOBeaconManager.getInstance(getApplicationContext(), MainActivity.SCAN_RECO_ONLY, MainActivity.ENABLE_BACKGROUND_RANGING_TIMEOUT);
         mRegions = this.generateBeaconRegion();
     }
